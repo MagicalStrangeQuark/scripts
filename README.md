@@ -1,2 +1,3 @@
 # ShellScripts
-Repositório de Scripts para Linux
+
+Repositório de Scripts Úteis para GNU/Linux
