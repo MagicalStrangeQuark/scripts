@@ -46,7 +46,7 @@ then
 fi
 
 # PROCESSAMENTO DA INSTRUÇÃO 1
-if [ $OPTION -eq 1 ] &&
+if [ $OPTION -eq 1 ]
 then
     echo -n "Por favor, informe um número inteiro: " && read NUM;
 
