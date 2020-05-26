@@ -26,11 +26,19 @@ sudo pacman -Su yay
 
 ## VISUAL STUDIO CODE
 sudo pacman -Sy && sudo pacman -Su && sudo pacman -Syu
-sudo yay -S visual-studio-code-bin
+yay -S visual-studio-code-bin
 
 ## GIT
 sudo pacman -Sy && sudo pacman -Su && sudo pacman -Syu
 sudo pacman -Sy git
+git config --global user.name "Wesley Flôres"
+git config --global user.email wesleyfloresterres@gmail.com
+
+## HTOP
+sudo pacman -Sy && sudo pacman -Su && sudo pacman -Syu
+sudo pacman -Sy htop
+
+## MYSQL
 
 ## NODE
 sudo pacman -Sy && sudo pacman -Su && sudo pacman -Syu
@@ -61,6 +69,10 @@ initdb --locale $LANG -E UTF8 -D '/var/lib/postgres/data/'
 systemctl enable postgresql.service
 systemctl start postgresql.service
 systemctl status postgresql.service
+
+## TMUX
+sudo pacman -Sy && sudo pacman -Su && sudo pacman -Syu
+sudo pacman -Sy tmux
 
 ## UNRAR
 sudo pacman -Sy && sudo pacman -Su && sudo pacman -Syu

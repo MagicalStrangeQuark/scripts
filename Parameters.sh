@@ -6,13 +6,13 @@ echo "NÚMERO DE PARÂMETROS PASSADOS PARA O SCRIPT $#";
 
 echo "OS PARÂMETROS PASSADOS FORAM:"
 
-# ISSO NÃO FUNCIONA
+# IT WON'T WORK
 
 for i in $(seq 1 $#); do
   echo "PARÂMETRO $i: $i";
 done
 
-# O CORRETO É ASSIM
+# IT WORK'S
 
 for i in $*; do 
    echo $i 
