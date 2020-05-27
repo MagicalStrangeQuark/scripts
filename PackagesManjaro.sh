@@ -1,3 +1,7 @@
+## COMPOSER
+sudo pacman -Sy && sudo pacman -Su && sudo pacman -Syu
+sudo pacman -Sy composer
+
 ## DEVILSPIE
 sudo pacman -Sy && sudo pacman -Su && sudo pacman -Syu
 sudo pacman -S devilspie || sudo pacman -Rs devilspie
@@ -55,20 +59,24 @@ sudo pacman -Sy p7zip
 sudo pacman -Sy && sudo pacman -Su && sudo pacman -Syu
 sudo pacman -Sy php
 
+## POSTGRES
+sudo pacman -Sy && sudo pacman -Su && sudo pacman -Syu
+sudo pacman -Sy postgresql postgis
+sudo mkdir -m 0700 -p '/var/lib/postgres/data'
+sudo chown postgres '/var/lib/postgres/data'
+sudo -i -u postgres
+initdb --locale $LANG -E UTF8 -D '/var/lib/postgres/data/'
+exit
+systemctl enable postgresql.service
+systemctl start postgresql.service
+systemctl status postgresql.service
+
 ## PGADMIN4
 sudo pacman -Sy && sudo pacman -Su && sudo pacman -Syu
 sudo pacman -Sy pgadmin4
 sudo -i -u postgres
 psql
 ALTER USER postgres WITH PASSWORD 'postgres';
-
-## POSTGRES
-sudo pacman -Sy && sudo pacman -Su && sudo pacman -Syu
-sudo pacman -S postgresql pgadmin4
-initdb --locale $LANG -E UTF8 -D '/var/lib/postgres/data/'
-systemctl enable postgresql.service
-systemctl start postgresql.service
-systemctl status postgresql.service
 
 ## QBITTORRENT
 sudo pacman -Sy && sudo pacman -Su && sudo pacman -Syu
