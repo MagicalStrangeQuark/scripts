@@ -70,6 +70,10 @@ systemctl enable postgresql.service
 systemctl start postgresql.service
 systemctl status postgresql.service
 
+## QBITTORRENT
+sudo pacman -Sy && sudo pacman -Su && sudo pacman -Syu
+sudo pacman -Sy qbittorrent
+
 ## TMUX
 sudo pacman -Sy && sudo pacman -Su && sudo pacman -Syu
 sudo pacman -Sy tmux
