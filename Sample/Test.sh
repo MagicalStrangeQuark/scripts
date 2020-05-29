@@ -8,7 +8,7 @@ read name;
 
 if [ 1 -eq 1 ]
 then
-    echo "IGUAL"
+    echo "1 É IGUAL A 1"
 else
     echo "NÃO IGUAL"
 fi
@@ -21,12 +21,6 @@ then
 else
     echo "O NOME INFORMADO FOI ${name}";
 fi
-
-# AMBAS AS COMPARAÇÃO SAO EQUIVALENTES, PODENDO-SE OPTAR POR QUALQUER UMA DAS DUAS, OU SEJA
-
-# test -f /etc/profile
-
-# [ -f /etc/profile ]
 
 VAR1=12;
 
@@ -45,5 +39,3 @@ then
 else
     echo "$VAR1 NÃO É MAIOR QUE $VAR2";
 fi
-
-# OUTRAS OPÇÕES PODEM SER ENCONTRADAS EM MAN TEST

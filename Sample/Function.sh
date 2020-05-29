@@ -1,10 +1,10 @@
 #!/usr/bin/zsh
 
-function hello () {
+function function () {
 	for i in `seq 1 $2`;
 	do
 		echo "$i. $0 => Welcome, $1. The system is active since `uptime -s`";
 	done
 }
 
-hello $USER 7;
+function $USER 7;

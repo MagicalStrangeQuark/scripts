@@ -19,3 +19,13 @@
 |      !=      |                   Diferente de                    |
 |      -n      |  String existe e não é vazia (apenas um operador) |
 |      -z      |    String existe e é vazia (apenas um operador)   |
+
+3. Verificando se o arquivo `/etc/profile` existe, sendo ambas as comparações abaixo equivalentes.
+
+1. Possibilidade:
+
+~$: test -f /etc/profile; echo $?
+
+2. Possibilidade:
+
+~$: [ -f /etc/profile ]; echo $?
