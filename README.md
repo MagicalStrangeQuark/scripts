@@ -22,10 +22,10 @@
 
 3. Verificando se o arquivo `/etc/profile` existe, sendo ambas as comparações abaixo equivalentes.
 
-1. Possibilidade:
+3.1. Possibilidade:
 
 ~$: test -f /etc/profile; echo $?
 
-2. Possibilidade:
+3.2. Possibilidade:
 
 ~$: [ -f /etc/profile ]; echo $?
