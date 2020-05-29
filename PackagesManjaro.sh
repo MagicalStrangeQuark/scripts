@@ -1,9 +1,7 @@
 ## COMPOSER
-sudo pacman -Sy && sudo pacman -Su && sudo pacman -Syu
 sudo pacman -Sy composer
 
 ## DEVILSPIE
-sudo pacman -Sy && sudo pacman -Su && sudo pacman -Syu
 sudo pacman -S devilspie || sudo pacman -Rs devilspie
 mkdir -p ~/.devilspie
 
@@ -17,50 +15,34 @@ echo '
 ' > ~/.devilspie/vscode_transparent.ds
 
 ## GEOIP CONFIGURATION
-sudo pacman -Sy && sudo pacman -Su && sudo pacman -Syu
 sudo pacman-mirrors -g --geoip
 
-## LOLCAT
-sudo pacman -Sy && sudo pacman -Su && sudo pacman -Syu
-sudo pacman -Sy lolcat
-
-## YAY
-sudo pacman -Sy && sudo pacman -Su && sudo pacman -Syu
-sudo pacman -Su yay
-
-## VISUAL STUDIO CODE
-sudo pacman -Sy && sudo pacman -Su && sudo pacman -Syu
-yay -S visual-studio-code-bin
-
 ## GIT
-sudo pacman -Sy && sudo pacman -Su && sudo pacman -Syu
 sudo pacman -Sy git
 git config --global user.name "Wesley Flôres"
 git config --global user.email wesleyfloresterres@gmail.com
 
 ## HTOP
-sudo pacman -Sy && sudo pacman -Su && sudo pacman -Syu
 sudo pacman -Sy htop
+
+## LOLCAT
+sudo pacman -Sy lolcat
 
 ## MYSQL
 
 ## NODE
-sudo pacman -Sy && sudo pacman -Su && sudo pacman -Syu
 snap install --edge node
 sudo systemctl enable --now snapd.socket
 sudo ln -s /var/lib/snapd/snap /snap
 snap install --edge node --classic
 
 ## P7ZIP
-sudo pacman -Sy && sudo pacman -Su && sudo pacman -Syu
 sudo pacman -Sy p7zip
 
 ## PHP
-sudo pacman -Sy && sudo pacman -Su && sudo pacman -Syu
-sudo pacman -Sy php
+sudo pacman -Sy php php-apache php-cgi php-fpm php-gd php-embed php-intl php-imap php-redis php-snmp php-pgsql
 
 ## POSTGRES
-sudo pacman -Sy && sudo pacman -Su && sudo pacman -Syu
 sudo pacman -Sy postgresql postgis
 sudo mkdir -m 0700 -p '/var/lib/postgres/data'
 sudo chown postgres '/var/lib/postgres/data'
@@ -72,24 +54,25 @@ systemctl start postgresql.service
 systemctl status postgresql.service
 
 ## PGADMIN4
-sudo pacman -Sy && sudo pacman -Su && sudo pacman -Syu
 sudo pacman -Sy pgadmin4
 sudo -i -u postgres
 psql
 ALTER USER postgres WITH PASSWORD 'postgres';
 
 ## QBITTORRENT
-sudo pacman -Sy && sudo pacman -Su && sudo pacman -Syu
 sudo pacman -Sy qbittorrent
 
 ## TMUX
-sudo pacman -Sy && sudo pacman -Su && sudo pacman -Syu
 sudo pacman -Sy tmux
 
 ## UNRAR
-sudo pacman -Sy && sudo pacman -Su && sudo pacman -Syu
 sudo pacman -Sy unrar
 
+## VISUAL STUDIO CODE
+yay -S visual-studio-code-bin
+
+## YAY
+sudo pacman -Su yay
+
 ## YOUTUBE-DL
-sudo pacman -Sy && sudo pacman -Su && sudo pacman -Syu
 sudo pacman -Sy youtube-dl
