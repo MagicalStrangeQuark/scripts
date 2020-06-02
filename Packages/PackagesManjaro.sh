@@ -29,6 +29,12 @@ sudo pacman -Sy htop
 sudo pacman -Sy lolcat
 
 ## MYSQL
+sudo pacman -Sy maraidb
+rm -Rf /var/lib/mysql/*
+sudo mysql_install_db --user=mysql --basedir=/usr --datadir=/var/lib/mysql
+sudo systemctl enable mariadb.service
+sudo systemctl start mariadb.service
+sudo mysql --user root
 
 ## NODE
 snap install --edge node
