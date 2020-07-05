@@ -2,6 +2,44 @@
 #include <pqxx/pqxx>
 #include <locale.h>
 
+enum DBCONFIG
+{
+    DBNAME = 0,
+    USER = 1,
+    PASSWORD = 2,
+    HOSTADDR = 3,
+    PORT = 4,
+};
+class DB
+{
+private:
+    std::string conn;
+
+public:
+    void __set(std::string config, std::string content)
+    {
+        this->conn.append(config).append(" = ").append(content).append(" ");
+    }
+
+    std::string string()
+    {
+        return this->conn;
+    }
+};
+
+std::string config()
+{
+    DB *database = new DB();
+
+    database->__set("dbname", "api");
+    database->__set("user", "postgres");
+    database->__set("password", "pass@root");
+    database->__set("hostaddr", "127.0.0.1");
+    database->__set("port", "5432");
+
+    return database->string();
+}
+
 /**
  * Postgres connection
  * 
@@ -11,24 +49,13 @@
  * ~$: g++ Postgres.cpp -lpqxx -lpq -o index && ./index
  * 
  */
-
-using namespace pqxx;
-
-const std::string DB = "api";
-const std::string USER = "postgres";
-const std::string PASSWORD = "pass@root";
-const std::string HOSTADDR = "127.0.0.1";
-const std::string PORT = "5432";
-
 int main(int argc, char *argv[])
 {
     setlocale(LC_ALL, "portuguese");
 
-    std::cout << "Begin..." << std::endl;
-
     try
     {
-        connection C("dbname = " + DB + " user = " + USER + " password = " + PASSWORD + " hostaddr = " + HOSTADDR + " port = " + PORT);
+        pqxx::connection C(config());
 
         if (C.is_open())
         {
@@ -38,18 +65,17 @@ int main(int argc, char *argv[])
         {
             std::cout << "Can't open database" << std::endl;
 
-            return 1;
+            return EXIT_FAILURE;
         }
 
-        C.disconnect();
-
-        work W(C);
+        pqxx::work W(C);
 
         std::string sql = "INSERT INTO colors(name, hexadecimal) VALUES('white', 'FFFFFF')";
 
         /* Execute SQL query */
         W.exec(sql);
         W.commit();
+
         std::cout << "Records created successfully" << std::endl;
         C.disconnect();
     }
@@ -57,10 +83,8 @@ int main(int argc, char *argv[])
     {
         std::cerr << e.what() << std::endl;
 
-        return 1;
+        return EXIT_FAILURE;
     }
-
-    std::cout << "end..." << std::endl;
 
     return 0;
 }
