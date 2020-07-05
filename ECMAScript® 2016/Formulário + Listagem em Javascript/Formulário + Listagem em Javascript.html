@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Javascript</title>
+
+	<script>
+		function recebeFocus() {
+			document.getElementById('input-input').style.backgroundColor = 'yellow';
+		}
+
+		function recebeBlur() {
+			var Tam = document.getElementById('input-input').value.length;
+
+			if (Tam >= 3) {
+				document.getElementById('input-input').style.backgroundColor = 'green';
+			} else {
+				document.getElementById('input-input').style.backgroundColor = 'red';
+			}
+		}
+	</script>
+</head>
+
+<body>
+	<input style="background: none" type="text" id="input-input" onfocus="recebeFocus();" onblur="recebeBlur();">
+</body>
+
+</html>

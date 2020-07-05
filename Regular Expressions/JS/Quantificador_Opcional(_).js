@@ -1,0 +1,12 @@
+// QUANTIFICADOR OPCIONAL: ? => ZERO OU UM
+
+/**
+ * ARRAY
+ */
+let Array = "FoGo Fogo FOGOOOOOOO FOG FOGUEIRA";
+
+// BUSCA APENAS OS PADRÕES QUE POSSUAM A PALAVRA FOGO
+console.log(Array.match(/fogo/gi))
+
+// BUSCA OS PADRÕES QUE POSSUAM A PALAVRA FOG, SENDO A LETRA 'O' OPCIONAL
+console.log(Array.match(/fogo?/gi));
