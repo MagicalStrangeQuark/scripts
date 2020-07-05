@@ -1,6 +1,9 @@
 ## COMPOSER
 sudo pacman -Sy composer
 
+## DIA
+sudo pacman -Sy dia
+
 ## DEVILSPIE
 sudo pacman -S devilspie || sudo pacman -Rs devilspie
 mkdir -p ~/.devilspie
@@ -49,7 +52,7 @@ sudo pacman -Sy p7zip
 sudo pacman -Sy php php-apache php-cgi php-fpm php-gd php-embed php-intl php-imap php-redis php-snmp php-pgsql
 
 ## POSTGRES
-sudo pacman -Sy postgresql postgis
+sudo pacman -Sy postgresql postgis python-psycopg2 libpqxx
 sudo mkdir -m 0700 -p '/var/lib/postgres/data'
 sudo chown postgres '/var/lib/postgres/data'
 sudo -i -u postgres
@@ -74,11 +77,20 @@ sudo pacman -Sy tmux
 ## UNRAR
 sudo pacman -Sy unrar
 
+## VIRTUAL BOX
+sudo pacman -S linux$(uname -r | cut -c 1,3)-virtualbox-host-modules
+sudo /sbin/rcvboxdrv setup
+
 ## VISUAL STUDIO CODE
 yay -S visual-studio-code-bin
+sudo chown -R $(whoami) /opt/visual-studio-code
+sudo chown -R root /opt/visual-studio-code
 
 ## YAY
 sudo pacman -Su yay
 
 ## YOUTUBE-DL
 sudo pacman -Sy youtube-dl
+
+## WORKBENCH
+sudo pacman -Sy mysql-workbench
