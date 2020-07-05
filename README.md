@@ -1,31 +1,15 @@
-# Repositório de Scripts Úteis para GNU/Linux
+# 💾 Repository Containing Some Usefull Codes / Scripts
 
-1. Comparação entre Números
+    💡 C++
 
-|  PROGRAMAÇÃO |  SHELL    |              SIGNIFICADO            |
-| ------------ | --------- | ----------------------------------- |
-|      ==      |    -eq    | (equal) Igual à                     |
-|      !=      |    -ne    | (not equal) Diferente de            |
-|      <       |    -lt    | (less than) Menor que               |
-|       >      |    -gt    | (greater than) Maior que            |
-|      <=      |    -le    | (less or egual) Menor ou igual à    |
-|      >=      |    -ge    | (greater or equal) Maior ou igual à |
+    💡 ECMAScript® 2016
 
-2. Comparação entre Strings
+    💡 PHP
 
-|  PROGRAMAÇÃO |                    SIGNIFICADO                    |
-| ------------ | ------------------------------------------------- |
-|      =       |   Igual à (isso mesmo apenas um sinal de igual)   |
-|      !=      |                   Diferente de                    |
-|      -n      |  String existe e não é vazia (apenas um operador) |
-|      -z      |    String existe e é vazia (apenas um operador)   |
+    💡 LinuxPackages
 
-3. Verificando se o arquivo `/etc/profile` existe, sendo ambas as comparações abaixo equivalentes.
+    💡 Python
 
-3.1. Possibilidade:
+    💡 Regular Expressions
 
-~$: test -f /etc/profile; echo $?
-
-3.2. Possibilidade:
-
-~$: [ -f /etc/profile ]; echo $?
+    💡 Shell
