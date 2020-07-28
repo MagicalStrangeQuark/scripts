@@ -2,14 +2,18 @@
 #include <pqxx/pqxx>
 #include <locale.h>
 
-enum DBCONFIG
-{
-    DBNAME = 0,
-    USER = 1,
-    PASSWORD = 2,
-    HOSTADDR = 3,
-    PORT = 4,
-};
+/**
+ * Connection class for postgres DBMS.
+ * 
+ * To compile this script, run: g++ Postgres.cpp -lpqxx -lpq -o index
+ */
+
+std::string PASSWORD = "password";
+std::string DBNAME = "somename";
+std::string USER = "postgres";
+std::string HOSTADDR = "127.0.0.1";
+std::string PORT = "5432";
+
 class DB
 {
 private:
@@ -25,30 +29,25 @@ public:
     {
         return this->conn;
     }
+
+    std::string get()
+    {
+    }
 };
 
 std::string config()
 {
     DB *database = new DB();
 
-    database->__set("dbname", "api");
-    database->__set("user", "postgres");
-    database->__set("password", "pass@root");
-    database->__set("hostaddr", "127.0.0.1");
-    database->__set("port", "5432");
+    database->__set("dbname", DBNAME);
+    database->__set("user", USER);
+    database->__set("password", PASSWORD);
+    database->__set("hostaddr", HOSTADDR);
+    database->__set("port", PORT);
 
     return database->string();
 }
 
-/**
- * Postgres connection
- * 
- * @see <https://www.tutorialspoint.com/postgresql/postgresql_c_cpp.htm:
- * @see <https://www.postgresql.org/docs/7.2/libpqpp-connect.html>
- * 
- * ~$: g++ Postgres.cpp -lpqxx -lpq -o index && ./index
- * 
- */
 int main(int argc, char *argv[])
 {
     setlocale(LC_ALL, "portuguese");
