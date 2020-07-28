@@ -1,3 +1,6 @@
+## CIRCLECI
+sudo snap install circleci
+
 ## COMPOSER
 sudo pacman -Sy composer
 
@@ -17,6 +20,10 @@ echo '
 )
 ' > ~/.devilspie/vscode_transparent.ds
 
+## DOCKER
+sudo pacman -Sy docker
+sudo chmod 666 /var/run/docker.sock
+
 ## GEOIP CONFIGURATION
 sudo pacman-mirrors -g --geoip
 
@@ -28,8 +35,14 @@ git config --global user.email wesleyfloresterres@gmail.com
 ## HTOP
 sudo pacman -Sy htop
 
+## LIBREPCB
+sudo snap install librepcb
+
 ## LOLCAT
 sudo pacman -Sy lolcat
+
+## MLOCATE
+sudo pacman -Sy mlocate
 
 ## MYSQL
 sudo pacman -Sy maraidb
@@ -50,6 +63,11 @@ sudo pacman -Sy p7zip
 
 ## PHP
 sudo pacman -Sy php php-apache php-cgi php-fpm php-gd php-embed php-intl php-imap php-redis php-snmp php-pgsql
+
+## xdebug (PHP EXTENSION)
+sudo pacman -Sy xdebug
+# UNCOMMENT CONTENT FILE IN: /etc/php/conf.d/xdebug.ini
+php -r "var_dump(extension_loaded('xdebug'));"
 
 ## POSTGRES
 sudo pacman -Sy postgresql postgis python-psycopg2 libpqxx
