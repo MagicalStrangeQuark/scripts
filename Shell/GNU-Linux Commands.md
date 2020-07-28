@@ -2,71 +2,120 @@
 
 ## 🔏 SYSTEM INFO
 
-    # SHOW THE CURRENT DATE AND TIME                                                                                            --> LINUX@ADMIN:~$ DATE
-    # SHOW THE MOUNTH'S CALENDAR                                                                                                --> LINUX@ADMIN:~$ CAL
-    # SHOW CURRENT UPTIME                                                                                                       --> LINUX@ADMIN:~$ UPTIME
-    # DISPLAY WHO IS ONLINE                                                                                                     --> LINUX@ADMIN:~$ W
-    # WHO YOU ARE LOGGED IN AS                                                                                                  --> LINUX@ADMIN:~$ WHOAMI
-    # DISPLAY INFORMATION ABOUT USER                                                                                            --> LINUX@ADMIN:~$ FINGER USER
-    # SHOW KERNEL INFORMATION                                                                                                   --> LINUX@ADMIN:~$ UNAME -A
-    # CPU INFORMATION                                                                                                           --> LINUX@ADMIN:~$ CAT /PROC/CPUINFO
-    # MEMORY INFORMATON                                                                                                         --> LINUX@ADMIN:~$ CAT /PROC/MEMINFO
-    # SHOW DISK USAGE                                                                                                           --> LINUX@ADMIN:~$ DF -H
-    # SHOW DIRECTORY SPACE USAGE                                                                                                --> LINUX@ADMIN:~$ DU
-    # SHOW MEMORY AND SWAP USAGE                                                                                                --> LINUX@ADMIN:~$ FREE
+### 👑 SHOW THE CURRENT DATE AND TIME 
+    DATE
+### SHOW THE MOUNTH'S CALENDAR
+    CAL
+### 👑 SHOW CURRENT UPTIME
+    UPTIME
+### 👑 DISPLAY WHO IS ONLINE
+    W
+### 👑 WHO YOU ARE LOGGED IN AS
+    WHOAMI
+### 👑 DISPLAY INFORMATION ABOUT USER
+    FINGER USER
+### 👑 SHOW KERNEL INFORMATION
+    UNAME -A
+### 👑 CPU INFORMATION
+    CAT /PROC/CPUINFO
+### 👑 MEMORY INFORMATON
+    CAT /PROC/MEMINFO
+### 👑 SHOW DISK USAGE
+    DF -H
+### 👑 SHOW DIRECTORY SPACE USAGE
+    DU
+### 👑 SHOW MEMORY AND SWAP USAGE
+    FREE
 
 ## 🔏 KEYBOARD SHORTCUTS
 
-    # RUN THE COMMAND                                                                                                           --> LINUX@ADMIN:~$ ENTER
-    # SHOW THE PREVIOUS COMMAND                                                                                                 --> LINUX@ADMIN:~$ UP ARROW
-    # ALLOWS YOU TO TYPE A PART OF THE COMMAND YOU'RE LOOKING FOR AND FINDS IT                                                  --> LINUX@ADMIN:~$ CTRL + R
-    # STOPS THE CURRENT COMMAND, RESUME WITH FG IN THE FOREGROUND OR BG IN THE BACKGROUND                                       --> LINUX@ADMIN:~$ CTRL + Z
-    # HALTS THE CURRENT COMMAND, CANCEL THE CURRENT OPERATION AND/OR START WITH A FRESH NEW LINE                                --> LINUX@ADMIN:~$ CTRL + C
-    # CLEAR THE SCREEN                                                                                                          --> LINUX@ADMIN:~$ CTRL + L
-    # ALLOWS THE SCROLLING OF THE BASH COMMAND WINDOW USING SHIFT + UP ARROW AND SHIFT + DOWN ARROW                             --> LINUX@ADMIN:~$ COMMAND | LESS
-    # REPEATS THE LAST COMMAND                                                                                                  --> LINUX@ADMIN:~$ !!
-    # REPEATS THE LAST ARGUMENT OF THE PREVIOUS COMMAND                                                                         --> LINUX@ADMIN:~$ COMMAND !$
-    # INSERT THE LAST ARGUMENT OF THE PREVIOUS COMAND ON THE FLY, WHICH ENABLES YOU TO EDIT IT BEFORE EXECUTING THE COMMAND     --> LINUX@ADMIN:~$ ESC +. (A PERIOD)
-    # RETURN TO THE START OF THE COMMAND YOU'RE TYPING                                                                          --> LINUX@ADMIN:~$ CTRL + A 
-    # GO TO THE END OF THE COMMAND YOU'RE TYPING                                                                                --> LINUX@ADMIN:~$ CTRL + E
-    # CUT EVERYTHING BEFORE THE CURSOR TO A SPECIAL CLIPBOARD, ERASES THE WHOLE LINE                                            --> LINUX@ADMIN:~$ CTRL + U
-    # CUT EVERYTHING AFTER THE CURSOR TO A SPECIAL CLIPBOARD                                                                    --> LINUX@ADMIN:~$ CTRL + K
-    # PASTE FROM THE SPECIAL CLIPBOARD THAT CTRL + U AND CTRL + K SAVE THEIR DATA TO                                            --> LINUX@ADMIN:~$ CTRL + Y
-    # SWAP THE TWO CHARACTERS BEFORE THE CURSOR (YOU CAN ACTUALLY USE THIS TO TRANSPORT A CHARACTER FROM THE LEFT TO THE RIGHT) --> LINUX@ADMIN:~$ CTRL + T
-    # DELETE THE WORD / ARGUMENT LEFT OF THE CURSOR IN THE CURRENT LINE                                                         --> LINUX@ADMIN:~$ CTRL + W
-    # LOG OUT OF CURRENT SESSION, SIMILIAR TO EXIT                                                                              --> LINUX@ADMIN:~$ CTRL + D
+    > RUN THE COMMAND --> LINUX@ADMIN:~$ ENTER
+    
+    > SHOW THE PREVIOUS COMMAND --> LINUX@ADMIN:~$ UP ARROW
+    
+    > ALLOWS YOU TO TYPE A PART OF THE COMMAND YOU'RE LOOKING FOR AND FINDS IT --> LINUX@ADMIN:~$ CTRL + R
+    
+    > STOPS THE CURRENT COMMAND, RESUME WITH FG IN THE FOREGROUND OR BG IN THE BACKGROUND --> LINUX@ADMIN:~$ CTRL + Z
+    
+    > HALTS THE CURRENT COMMAND, CANCEL THE CURRENT OPERATION AND/OR START WITH A FRESH NEW LINE --> LINUX@ADMIN:~$ CTRL + C
+    
+    > CLEAR THE SCREEN --> LINUX@ADMIN:~$ CTRL + L
+    
+    > ALLOWS THE SCROLLING OF THE BASH COMMAND WINDOW USING SHIFT + UP ARROW AND SHIFT + DOWN ARROW --> LINUX@ADMIN:~$ COMMAND | LESS
+    
+    > REPEATS THE LAST COMMAND --> LINUX@ADMIN:~$ !!
+    
+    > REPEATS THE LAST ARGUMENT OF THE PREVIOUS COMMAND --> LINUX@ADMIN:~$ COMMAND !$
+    
+    > INSERT THE LAST ARGUMENT OF THE PREVIOUS COMAND ON THE FLY, WHICH ENABLES YOU TO EDIT IT BEFORE EXECUTING THE COMMAND --> LINUX@ADMIN:~$ ESC +. (A PERIOD)
+    
+    > RETURN TO THE START OF THE COMMAND YOU'RE TYPING --> LINUX@ADMIN:~$ CTRL + A 
+    
+    > GO TO THE END OF THE COMMAND YOU'RE TYPING --> LINUX@ADMIN:~$ CTRL + E
+    
+    > CUT EVERYTHING BEFORE THE CURSOR TO A SPECIAL CLIPBOARD, ERASES THE WHOLE LINE --> LINUX@ADMIN:~$ CTRL + U
+    
+    > CUT EVERYTHING AFTER THE CURSOR TO A SPECIAL CLIPBOARD --> LINUX@ADMIN:~$ CTRL + K
+    
+    > PASTE FROM THE SPECIAL CLIPBOARD THAT CTRL + U AND CTRL + K SAVE THEIR DATA TO --> LINUX@ADMIN:~$ CTRL + Y
+    
+    > SWAP THE TWO CHARACTERS BEFORE THE CURSOR (YOU CAN ACTUALLY USE THIS TO TRANSPORT A CHARACTER FROM THE LEFT TO THE RIGHT) --> LINUX@ADMIN:~$ CTRL + T
+    
+    > DELETE THE WORD / ARGUMENT LEFT OF THE CURSOR IN THE CURRENT LINE --> LINUX@ADMIN:~$ CTRL + W
+    
+    > LOG OUT OF CURRENT SESSION, SIMILIAR TO EXIT --> LINUX@ADMIN:~$ CTRL + D
+    
+    > CHANGE SESSION ON TMUX  --> LINUX@ADMIN:~$ tmux attach-session -t <session_number>
 
 ## 🔏 LEARN THE COMMANDS
 
-    # LIST MANUAL PAGES FOR SUBJECT                                                                                         --> LINUX@ADMIN:~$ APROPOS SUBJECT
-    # DISPLAY MAN PAGES CONTAINING KEYWORD                                                                                  --> LINUX@ADMIN:~$ MAN -K KEYWORD
-    # SHOW THE MANUAL FOR COMMAND                                                                                           --> LINUX@ADMIN:~$ MAN COMMAND
-    # MAKE A PDF OF A MANUAL PAGE                                                                                           --> LINUX@ADMIN:~$ MAN -T MAN | PS2PDF -> MAN.PDF
-    # SHOW FULL PATH NAME OF COMMAND                                                                                        --> LINUX@ADMIN:~$ WHICH COMMAND
-    # SEE HOW LONG A COMMAND TAKES                                                                                          --> LINUX@ADMIN:~$ TIME COMMAND
-    # SHOW POSSIBLE LOCATIONS OF APP                                                                                        --> LINUX@ADMIN:~$ WHEREIS APP
-    # SHOW WHICH APP WILL BE RUN BY DEFAULT; IT SHOWS THE FULL PATH                                                         --> LINUX@ADMIN:~$ WHICH APP
+    # LIST MANUAL PAGES FOR SUBJECT --> LINUX@ADMIN:~$ APROPOS SUBJECT
+    
+    # DISPLAY MAN PAGES CONTAINING KEYWORD --> LINUX@ADMIN:~$ MAN -K KEYWORD
+    
+    # SHOW THE MANUAL FOR COMMAND --> LINUX@ADMIN:~$ MAN COMMAND
+    
+    # MAKE A PDF OF A MANUAL PAGE --> LINUX@ADMIN:~$ MAN -T MAN | PS2PDF -> MAN.PDF
+    
+    # SHOW FULL PATH NAME OF COMMAND --> LINUX@ADMIN:~$ WHICH COMMAND
+    
+    # SEE HOW LONG A COMMAND TAKES --> LINUX@ADMIN:~$ TIME COMMAND
+    
+    # SHOW POSSIBLE LOCATIONS OF APP --> LINUX@ADMIN:~$ WHEREIS APP
+    
+    # SHOW WHICH APP WILL BE RUN BY DEFAULT; IT SHOWS THE FULL PATH --> LINUX@ADMIN:~$ WHICH APP
 
 ## 🔏 SEARCHING
 
-    # SEARCH FOR PATTERN IN FILES                                                                                               --> LINUX@ADMIN:~$ GREP PATTERN FILES
-    # SEARCH RECURSIVELY FOR PATTERN IN DIR                                                                                     --> LINUX@ADMIN:~$ GREP -R PATTERN DIR
-    # SEACH FOR PATTERN IN THE OUTPUT OF COMMAND                                                                                --> LINUX@ADMIN:~$ COMMAND | GREP PATTERN
-    # FIND ALL INSTANCES OF FILE                                                                                                --> LINUX@ADMIN:~$ LOCATE FILE
-    # STARTING WITH THE ROOT DIRECTORY, LOOK FOR THE FILE CALLED FILENAME                                                       --> LINUX@ADMIN:~$ FIND / -NAME FILENAME
-    # FIND A FILE CALED FILENAME USING THE LOCATE COMMAND; THIS ASSUMES YOU HAVE ALREADY USED THE COMMAND UPDATEDB (SEET NEXT)  --> LINUX@ADMIN:~$ LOCATE FILENAME
-    # CREATE OR UPDATE THE DATABASE OF FILES ON ALL FILE SYSTEMS ATTACHED TO THE LINUX ROOT DIRECTORY                           --> LINUX@ADMIN:~$ UPDATEDB
-    # SHOW THE SUBDIRECTORY CONTAINING THE EXECUTABLE FILE CALLED FILENAME                                                      --> LINUX@ADMIN:~$ WHICH FILENAME
-    # STARTING WITH THE DIRECTORY CALLED DIR, LOOK FOR AND LIST ALL FILES CONTAINING TEXTSTRINGTOFIND                           --> LINUX@ADMIN:~$ GREP TEXTSTRINGTOFIND /DIR
+    # SEARCH FOR PATTERN IN FILES --> LINUX@ADMIN:~$ GREP PATTERN FILES
+    
+    # SEARCH RECURSIVELY FOR PATTERN IN DIR --> LINUX@ADMIN:~$ GREP -R PATTERN DIR
+    
+    # SEACH FOR PATTERN IN THE OUTPUT OF COMMAND --> LINUX@ADMIN:~$ COMMAND | GREP PATTERN
+    
+    # FIND ALL INSTANCES OF FILE --> LINUX@ADMIN:~$ LOCATE FILE
+    
+    # STARTING WITH THE ROOT DIRECTORY, LOOK FOR THE FILE CALLED FILENAME --> LINUX@ADMIN:~$ FIND / -NAME FILENAME
+    
+    # FIND A FILE CALED FILENAME; THIS ASSUMES YOU HAVE ALREADY USED THE COMMAND UPDATEDB (SEET NEXT) --> LINUX@ADMIN:~$ LOCATE FILENAME
+    
+    # CREATE OR UPDATE THE DATABASE OF FILES ON ALL FILE SYSTEMS ATTACHED TO THE LINUX ROOT DIRECTORY --> LINUX@ADMIN:~$ UPDATEDB
+    
+    # SHOW THE SUBDIRECTORY CONTAINING THE EXECUTABLE FILE CALLED FILENAME --> LINUX@ADMIN:~$ WHICH FILENAME
+    
+    # STARTING WITH THE DIRECTORY CALLED DIR, LOOK FOR AND LIST ALL FILES CONTAINING TEXTSTRINGTOFIND --> LINUX@ADMIN:~$ GREP TEXTSTRINGTOFIND /DIR
 
 ## 🔏 FILE PERMISSIONS
 
     # [7][DONO]R[4]W[2]X[1] [7][GRUPO]R[4]W[2]X[1] [7][TODOS]R[4]W[2]X[1]
 
     # CHANGE THE PERMISSIONS OF FILE TO OCTAL, WHICH CAN BE FOUND SEPARATELY FOR USER, GROUP AND WORLD BY ADDING: 4 - READ(R), 2 - WRITE(W), 1 - EXECUTE(X) --> LINUX@ADMIN:~$ CHMOD OCTAL FILE 
-    # READ, WRITE, EXECUTE FOR ALL                                                                                            --> LINUX@ADMIN:~$ CHMOD 777      
-    # RWX FOR OWNER, RX FOR GROUP AND WORLD                                                                                   --> LINUX@ADMIN:~$ CHMOD 755
-    # FOR MORE OPTIONS, SEE MAN CHMOD                                                                                         --> LINUX@ADMIN:~$ MAN CHMOD
+    
+    # READ, WRITE, EXECUTE FOR ALL --> LINUX@ADMIN:~$ CHMOD 777      
+    
+    # RWX FOR OWNER, RX FOR GROUP AND WORLD --> LINUX@ADMIN:~$ CHMOD 755
+    
+    # FOR MORE OPTIONS, SEE MAN CHMOD --> LINUX@ADMIN:~$ MAN CHMOD
 
 ## 🔏 FILE COMMANDS
 
@@ -131,16 +180,26 @@
     
 ## 🔏 PRINTING (USA "+" PARA COLOCAR PERMISOS Y "-" PARA ELIMINAR)
 
-    # START THE PRINT DAEMON                                               --> LINUX@ADMIN:~$ /ETC/RC.D/INIT.D/LPD START
-    # STOP THE PRINT DAEMON                                                --> LINUX@ADMIN:~$ /ETC/RC.D/INIT.D/LPD STOP
-    # DISPLAY STATUS OF THE PRINT DAEMON                                   --> LINUX@ADMIN:~$ /ETC/RC.D/INIT.D/LPD STATUS
-    # DISPLAY JOBS IN PRINT QUEUE                                          --> LINUX@ADMIN:~$ LPQ
-    # REMOVE JOBS FROM QUEUE                                               --> LINUX@ADMIN:~$ LPRM
-    # PRINT A FILE                                                         --> LINUX@ADMIN:~$ LPR
-    # PRINTER CONTROL TOOL                                                 --> LINUX@ADMIN:~$ LPC
-    # PRINT THE MANUAL PAGE CALLED SUBJECT AS PLAIN TEXT                   --> LINUX@ADMIN:~$ MAN SUBJECT | LPR
-    # PRINT THE MANUAL PAGE CALLED SUBJECT AS POSTSCRIPT OUTPUT            --> LINUX@ADMIN:~$ MAN -T SUBJECT | LPR
-    # START X PRINTER SETUP INTERFACE                                      --> LINUX@ADMIN:~$ PRINTTOOL
+### 👑 START THE PRINT DAEMON
+    LINUX@ADMIN:~$ /ETC/RC.D/INIT.D/LPD START
+### 👑 STOP THE PRINT DAEMON
+    LINUX@ADMIN:~$ /ETC/RC.D/INIT.D/LPD STOP
+### 👑 DISPLAY STATUS OF THE PRINT DAEMON
+    LINUX@ADMIN:~$ /ETC/RC.D/INIT.D/LPD STATUS
+### 👑 DISPLAY JOBS IN PRINT QUEUE
+    LINUX@ADMIN:~$ LPQ
+### 👑 REMOVE JOBS FROM QUEUE
+    LINUX@ADMIN:~$ LPRM
+### 👑 PRINT A FILE
+    LINUX@ADMIN:~$ LPR
+### 👑 PRINTER CONTROL TOOL
+    LINUX@ADMIN:~$ LPC
+### 👑 PRINT THE MANUAL PAGE CALLED SUBJECT AS PLAIN TEXT
+    LINUX@ADMIN:~$ MAN SUBJECT | LPR
+### 👑 PRINT THE MANUAL PAGE CALLED SUBJECT AS POSTSCRIPT OUTPUT
+    LINUX@ADMIN:~$ MAN -T SUBJECT | LPR
+### 👑 START X PRINTER SETUP INTERFACE
+    LINUX@ADMIN:~$ PRINTTOO
 
 ## 🔏 NETWORK
 
@@ -231,7 +290,7 @@
 
 ## 🔏 CONFIGURAÇÃO TECLAS ?\ TECLADO LENOVO
 
-    # COFIGURAÇÃO TECLADO LENOVO                     --> LINUX@ADMIN:~$ setxkbmap -model abnt2 -layout br -variant abnt2 && xmodmap -e "keycode 105 = KP_Divide question"
+    # COFIGURAÇÃO TECLADO LENOVO --> LINUX@ADMIN:~$ setxkbmap -model abnt2 -layout br -variant abnt2 && xmodmap -e "keycode 105 = KP_Divide question"
 
 ## 🔏 VARIÁVEIS
 
@@ -250,14 +309,14 @@
     # ABRIR UM ARQUIVO DE TEXTO COM TODAS AS LINHAS NÃO VAZIAS NUMERADAS                           --> LINUX@ADMIN:~$ CAT -B NOME_DO_ARQUIVO.FORMATO (SIMILAR AO COMANDO NL)
     # ABRIR UM ARQUIVO DE TEXTO DEIXANDO, NO MÁXIMO, UMA LINHA EM BRANCO (APAGA SE HOUVER MAIS)    --> LINUX@ADMIN:~$ CAT -S NOME_DO_ARQUIVO.FORMATO
     # ABRIR UM ARQUIVO DE TEXTO EXIBINDO TODOS OS CARACTERES PRESENTES NO ARQUIVO                  --> LINUX@ADMIN:~$ CAT -A NOME_DO_ARQUIVO.FORMATO
-    # JOGAR O CONTEÚDO DO ARQUUVO TESTE.TXT NELE MESMO                                             --> LINUX@ADMIN:~$ CAT TEST.TXT | CAT >> TESTE.TXT
-    # JOGAR UM TEXTO NA TELA EM ORDEM INVERSA                                                      --> LINUX@ADMIN:~$ TAC
-    # ABRIR UM ARQUIVO DE TEXTO COM AS LINHAS INVERTIDAS                                           --> LINUX@ADMIN:~$ TAC NOME_DO_ARQUIVO.FORMATO
-    # ABRIR AS PRIMEIRAS X LINHAS DE UM ARQUIVO DE TEXTO                                           --> LINUX@ADMIN:~$ HEAD -XN NOME_DO_ARQUIVO.FORMATO
+    # JOGAR O CONTEÚDO DO ARQUUVO TESTE.TXT NELE MESMO --> LINUX@ADMIN:~$ CAT TEST.TXT | CAT >> TESTE.TXT
+    # JOGAR UM TEXTO NA TELA EM ORDEM INVERSA --> LINUX@ADMIN:~$ TAC
+    # ABRIR UM ARQUIVO DE TEXTO COM AS LINHAS INVERTIDAS --> LINUX@ADMIN:~$ TAC NOME_DO_ARQUIVO.FORMATO
+    # ABRIR AS PRIMEIRAS X LINHAS DE UM ARQUIVO DE TEXTO --> LINUX@ADMIN:~$ HEAD -XN NOME_DO_ARQUIVO.FORMATO
     # ABRIR AS X ÚLTIMAS LINHAS DE UM ARQUIVO                                                      --> LINUX@ADMIN:~$ TAIL -XN NOME_DO_ARQUIVO.FORMATO
-    # ABRIR UM ARQUIVO E MONITORÁ-LO (LOG, POR EXEMPLO)                                            --> LINUX@ADMIN:~$ TAIL -F NOME_DO_ARQUIVO.FORMATO
-    # INSERIR UMA STRING AO FINAL DE UM ARQUIVO DE TEXTO                                           --> LINUX@ADMIN:~$ ECHO "MENSAGEM" >> NOME_DO_ARQUIVO.FORMATO
-    # ABRIR UM ARQUIVO DE TEXTO COM PAGINAÇÃO                                   --> LINUX@ADMIN:~$ LESS FILENAME.FORMAT ('/' PERMITE PESQUISAR TERMOS, 'N' REPETE A PESQUISA)
+    # ABRIR UM ARQUIVO E MONITORÁ-LO (LOG, POR EXEMPLO) --> LINUX@ADMIN:~$ TAIL -F NOME_DO_ARQUIVO.FORMATO
+    # INSERIR UMA STRING AO FINAL DE UM ARQUIVO DE TEXTO --> LINUX@ADMIN:~$ ECHO "MENSAGEM" >> NOME_DO_ARQUIVO.FORMATO
+    # ABRIR UM ARQUIVO DE TEXTO COM PAGINAÇÃO --> LINUX@ADMIN:~$ LESS FILENAME.FORMAT ('/' PERMITE PESQUISAR TERMOS, 'N' REPETE A PESQUISA)
     # EXIBIR O NÚMERO DE LINHAS, QUANTIDADE DE PALAVRAS E QUANTIDADE BYTES DE UM ARQUIVO DE TEXTO  --> LINUX@ADMIN:~$ WC NOME_DO_ARQUIVO.FORMATO
     # ABRIR UM ARQUIVO DE TEXTO ORDENANDO AS LINHAS                                                --> LINUX@ADMIN:~$ SORT NOME_DO_ARQUIVO.FORMATO
     # ABRIR UM ARQUIVO DE TEXTO ORDENANDO PELAS SEGUNDAS PALAVRAS DA LINHA                         --> LINUX@ADMIN:~$ SORT -K2 NOME_DO_ARQUIVO.FORMATO
@@ -273,26 +332,37 @@
 ## 🔏 HASH
 
     # MD5SUM
+    
     # SHA256SUM
+
     # SHA512SUM
+
     # SHA1SUM
+
     # sha256sum -c NOME_ARQUIVO
     
 ## 🔏 INSTALAÇÃO
 
-    # LISTAR TODOS OS SOFTWARES INSTALADOS                                                          --> LINUX@ADMIN:~$ grep " install " /var/log/dpkg.log
+    # LISTAR TODOS OS SOFTWARES INSTALADOS ON UBUNTU --> LINUX@ADMIN:~$ grep " install " /var/log/dpkg.log
 
-## 🔏 HISTÓRICO
+## 🔏 HISTORY
 
-    # EXIBIR O HISTÓRICO DE COMANDOS DIGITADOS                                                      --> LINUX@ADMIN:~$ HISTORY
-    # EXECUTAR O ÚLTIMO SCRIPT SALVO EM BASH.HISTORY                                                --> LINUX@ADMIN:~$ !!
-    # EXECUTAR UM COMANDO PELO NÚMERO DELE SALVO EM BASH.HISTORY                                    --> LINUX@ADMIN:~$ !<NUMERO>
-    # LIMPAR O HISTÓRICO DE COMANDOS DIGITADOS                                                      --> LINUX@ADMIN:~$ HISTORY -C
-    # PESQUISAR PELOS COMANDOS SALVOS EM BASH.HISTORY                                               --> LINUX@ADMIN:~$ CTRL + R
+    > EXIBIR O HISTÓRICO DE COMANDOS DIGITADOS --> LINUX@ADMIN:~$ HISTORY
+
+    > EXECUTAR O ÚLTIMO SCRIPT SALVO EM BASH.HISTORY --> LINUX@ADMIN:~$ !!
+
+    > EXECUTAR UM COMANDO PELO NÚMERO DELE SALVO EM BASH.HISTORY --> LINUX@ADMIN:~$ !<NUMERO>
+
+    > LIMPAR O HISTÓRICO DE COMANDOS DIGITADOS --> LINUX@ADMIN:~$ HISTORY -C
+
+    > PESQUISAR PELOS COMANDOS SALVOS EM BASH.HISTORY --> LINUX@ADMIN:~$ CTRL + R
 
 ## 🔏 SINCRONIZAÇÃO
 
-    # SINCRONIZAR APENAS OS ARQUIVOS QUE NÃO ESTÃO PRESENTES OU QUE FORAM ALTERADOS  --> LINUX@ADMIN:~$ RSYNC -HAVZ $PWD/LOCAL/ $PWD/REMOTO
-    # REMOVER OS ARQUIVOS REMOTOS QUE NÃO ESTÃO PRESENTES LOCAMENTE                  --> LINUX@ADMIN:~$ RSYNC -HAVZ -DELETE $PWD/LOCAL/ $PWD/REMOTO
-    # SINCRONIZAR APENAS OS ARQUIVOS TXT DA ORIGEM                                   --> LINUX@ADMIN:~$ RSYNC -HAVZ --INCLUDE="*.TXT" --EXCLUDE="*" $PWD/LOCAL/ $PWD/REMOTO
-    # SINCRONIZAR REMOTAMENTE UTILIZANDO SSH                          --> LINUX@ADMIN:~ rsync -hvazz --include="*.png" --exclude="*" $PWD/local/ root@192.168.1.9:$PWD/remoto
+    > SINCRONIZAR APENAS OS ARQUIVOS QUE NÃO ESTÃO PRESENTES OU QUE FORAM ALTERADOS  --> LINUX@ADMIN:~$ RSYNC -HAVZ $PWD/LOCAL/ $PWD/REMOTO
+
+    > REMOVER OS ARQUIVOS REMOTOS QUE NÃO ESTÃO PRESENTES LOCAMENTE --> LINUX@ADMIN:~$ RSYNC -HAVZ -DELETE $PWD/LOCAL/ $PWD/REMOTO
+
+    > SINCRONIZAR APENAS OS ARQUIVOS TXT DA ORIGEM --> LINUX@ADMIN:~$ RSYNC -HAVZ --INCLUDE="*.TXT" --EXCLUDE="*" $PWD/LOCAL/ $PWD/REMOTO
+
+    > SINCRONIZAR REMOTAMENTE UTILIZANDO SSH --> LINUX@ADMIN:~ rsync -hvazz --include="*.png" --exclude="*" $PWD/local/ root@192.168.1.9:$PWD/remoto
