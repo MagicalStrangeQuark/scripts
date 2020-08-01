@@ -31,6 +31,20 @@ std::string &File::file_get_contents(std::string FILENAME, std::string &CONTENT)
     return CONTENT;
 }
 
+std::string File::json_encode(int arr[], int length)
+{
+    std::string str = "[";
+
+    for (int i = 0; i < length; i++)
+    {
+        str += ((i + 1) < length) ? std::to_string(arr[i]) + ", " : std::to_string(arr[i]);
+    }
+
+    str += "]\n";
+
+    return str;
+}
+
 File::File() {}
 
 File::~File() {}
