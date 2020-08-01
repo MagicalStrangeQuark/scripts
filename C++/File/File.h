@@ -1,5 +1,5 @@
-#ifndef _MODULE_H_
-#define _MODULE_H_
+#ifndef FILE_H
+#define FILE_H
 
 #include <iostream>
 #include <fstream>
@@ -13,9 +13,10 @@ enum WRITE_MODE
 class File
 {
 public:
+    void file_put_contents(const std::string &FILENAME, const std::string &CONTENT, WRITE_MODE WRITE_MODE = FILE_APPEND);
+    std::string &file_get_contents(std::string FILENAME, std::string &CONTENT);
     File() {}
-    static void file_put_contents(const std::string &FILENAME, const std::string &content, WRITE_MODE WRITE_MODE = FILE_APPEND);
-    static std::string &file_get_contents(std::string FILENAME, std::string &CONTENT);
+    ~File() {}
 
 private:
 };

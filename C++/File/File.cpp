@@ -30,3 +30,7 @@ std::string &File::file_get_contents(std::string FILENAME, std::string &CONTENT)
 
     return CONTENT;
 }
+
+File::File() {}
+
+File::~File() {}
