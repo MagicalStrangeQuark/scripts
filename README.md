@@ -8,7 +8,7 @@
 
             📓 Module
 
-            📓Sorting
+            📓 Sorting
                 
                 📖 BubbleSort
 
