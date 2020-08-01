@@ -1,5 +1,7 @@
 #include <iostream>
-#include "File.h"
+#include "./../../File/File.h"
+
+// g++ Int.cpp ./../../File/File.cpp -o index && ./index && rm ./index
 
 const std::string FILENAME = "File.TXT";
 
