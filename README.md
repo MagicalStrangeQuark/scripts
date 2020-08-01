@@ -1,15 +1,33 @@
 # 💾 Repository Containing Some Usefull Codes / Scripts
 
-    💡 C++
+    📁 C++
 
-    💡 ECMAScript® 2016
+        📂 Sorting
 
-    💡 PHP
+            📓 File
 
-    💡 LinuxPackages
+            📓 Module
 
-    💡 Python
+            📓Sorting
+                
+                📖 BubbleSort
 
-    💡 Regular Expressions
+    📁 ECMAScript® 2016
 
-    💡 Shell
+    📁 LinuxPackages
+
+    📁 PHP
+
+        📂 OO
+
+    📁 Python
+
+    📁 Regular Expressions
+
+        📂 PHP
+
+        📂 JS
+
+    📁 Shell
+
+        📂 Sample
