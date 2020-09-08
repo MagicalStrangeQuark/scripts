@@ -45,7 +45,7 @@ sudo pacman -Sy lolcat
 sudo pacman -Sy mlocate
 
 ## MYSQL
-sudo pacman -Sy maraidb
+sudo pacman -Sy mariadb
 rm -Rf /var/lib/mysql/*
 sudo mysql_install_db --user=mysql --basedir=/usr --datadir=/var/lib/mysql
 sudo systemctl enable mariadb.service
