@@ -64,7 +64,7 @@ sudo pacman -Sy p7zip
 ## PHP
 sudo pacman -Sy php php-apache php-cgi php-fpm php-gd php-embed php-intl php-imap php-redis php-snmp php-pgsql
 
-## xdebug (PHP EXTENSION)
+## XDEBUG (PHP EXTENSION)
 sudo pacman -Sy xdebug
 # UNCOMMENT CONTENT FILE IN: /etc/php/conf.d/xdebug.ini
 php -r "var_dump(extension_loaded('xdebug'));"
