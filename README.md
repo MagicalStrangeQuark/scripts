@@ -20,8 +20,6 @@
 
         📂 OO
 
-    📁 Python
-
     📁 Regular Expressions
 
         📂 PHP
