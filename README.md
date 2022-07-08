@@ -14,18 +14,8 @@
 
     📁 ECMAScript® 2016
 
-    📁 LinuxPackages
-
-    📁 PHP
-
-        📂 OO
-
     📁 Regular Expressions
 
         📂 PHP
 
         📂 JS
-
-    📁 Shell
-
-        📂 Sample
